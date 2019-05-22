@@ -52,13 +52,16 @@ System Analyzer tool reports back following information about CPU, GPU and Intel
 *   Install checks for Intel® Media Server Studio/Intel® SDK for OpenCL™ applications components
 *   Results from runs of small smoke test programs for Intel® Media Server Studio and OpenCL™
 
-**Run** System Analyzer tool with below commands:
-```
+- Export the environment variables before running commands.
+```bash
 export LD_LIBRARY_PATH="/usr/local/lib:/usr/lib64"
 export LIBVA_DRIVERS_PATH=/opt/intel/mediasdk/lib64/
 export LIBVA_DRIVER_NAME=iHD
 export MFX_HOME=/opt/intel/mediasdk/
+```
 
+**Run** System Analyzer tool with below commands:
+```
 cd ~/Desktop/Retail/MediaSDK
 python sys_analyzer_linux.py
 ```
@@ -81,7 +84,7 @@ Intel® Media Server Studio ships with few basic samples to try various functina
 Make sure to review the performance parameters while running these samples. Above said tools can help to understand the difference between software and hardware acceleration modes.
 
 Open new terminal and change the directory
-
+*Note:* Make sure to export the environment variables.
 ```
 $ cd /opt/intel/mediasdk/share/mfx/samples/_bin/
 ```
@@ -114,13 +117,7 @@ For example:
 ## Encode raw video frames
 
 sample\_encode is another console application which performs encoding of raw video frames into elementary compressed stream
-- Export the environment variables before running commands.
-```bash
-export LD_LIBRARY_PATH="/usr/local/lib:/usr/lib64"
-export LIBVA_DRIVERS_PATH=/opt/intel/mediasdk/lib64/
-export LIBVA_DRIVER_NAME=iHD
-export MFX_HOME=/opt/intel/mediasdk/
-```
+
 
 <!--
 Execute the below command for software implementation:
