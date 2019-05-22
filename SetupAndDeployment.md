@@ -121,7 +121,7 @@ sudo apt install ocl-icd-opencl-dev
 
 ```bash
 $ sudo apt install npm
-$ sudo apt-install python3-pip
+$ sudo apt install python3-pip
 $ npm install meshcommander
 $ sudo apt install nodejs-legacy
 ```
@@ -129,7 +129,7 @@ $ sudo apt install nodejs-legacy
 ## Additional Tools
 Run the below command to install some additional packages required to complete the tutorials:
 ``` bash
-sudo apt-install python-pip
+sudo apt install python-pip
 sudo apt install ffmpeg intel-gpu-tools htop
 pip install requests
 sudo pip3 install pyyaml
